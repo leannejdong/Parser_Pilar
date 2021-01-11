@@ -1,0 +1,28 @@
+S 1 DO
+P 1
+0 10 1
+S 2 CURRENTEDGE
+1.1
+P 2
+1 %Amp
+S 3 RESISTEDGE
+P 3
+1 %Ohm
+S 4 RESISTEDGE
+P 4
+1 %ohm
+S 5 RESISTEDGE
+P 5
+1 %Ohm
+S 6 VERTEX
+2 3 4
+P 6
+x6 y6 z6
+S 7 VERTEX
+4 5
+P 7
+x7 y7 z7
+S 8 VERTEX
+2 3 5
+P 8
+x8 y8 z8
