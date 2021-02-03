@@ -30,6 +30,7 @@ int main() {
             line_stream >> block_type;
 
             cerr << word << " " << block_number << " " << block_type << "\n";
+            output << line << "\n";
 
             if ((block_type == "CURRENTEDGE")||(block_type == "VERTEX")) {
                 getline(file, line);
@@ -39,7 +40,7 @@ int main() {
         else if (word == "P") {
             int block_number;
             line_stream >> block_number;
-            cerr << word << " " << block_number << "\n";
+            output << word << " " << block_number << "\n";
             if (!line_stream) {
                 assert(false); // not implemented
             }
@@ -53,6 +54,7 @@ int main() {
             assert(false); // not implemented
         }
 
+
 //        if (line[0]=='S')
 //        {
 //            ++num_lines;
@@ -61,5 +63,6 @@ int main() {
 //        }
 
     }
-   // std::cout << "Number of lines contain S: " << num_lines;
+
+    // std::cout << "Number of lines contain S: " << num_lines;
 }
