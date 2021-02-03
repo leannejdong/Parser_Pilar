@@ -33,7 +33,7 @@ int main() {
 
             if ((block_type == "CURRENTEDGE")||(block_type == "VERTEX")) {
                 getline(file, line);
-                cerr << line << "\n";
+                output << line << "\n";
             }
         }
         else if (word == "P") {
@@ -46,7 +46,7 @@ int main() {
 
             //cerr << "Beginning parameters for block " << block_number << "\n";
             getline(file, line);
-            cerr << line << "\n";
+            output << line << "\n";
         }
         else {
             cerr << "Unknown line: " << line << "\n";
