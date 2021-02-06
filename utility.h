@@ -50,10 +50,9 @@ inline static Pair parseGraph(std::istream &streamA)
             } else if(block_type == "VERTEX") {
                 getline(streamA, line);
                 std::istringstream streamV(line);
-                while(streamV){
-                    int x;
-                    streamV >> x;
-                    if(streamV.fail())
+                int x;
+                while(streamV>>x){ //A common shortcut is to put the read and the check together
+                    if(streamV.fail()) //to avoid doing push_back if the read failed
                         break;
                     V.push_back(make_pair(block_number,x));
                 }
