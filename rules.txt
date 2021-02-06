@@ -1,0 +1,15 @@
+Let int x, y;
+Let string S, P, CURRENTEDGE, VERTEX, etc;
+
+rule1:
+If
+        S x CURRENTEDGE
+        y.y
+Then    vector<pair<int,int>> edge = add_pair(x,y)
+
+rule2:
+If
+        S x VERTEX
+        y 3 4
+Then    vector<pair<int,int>> edge = add_pair(x,y)
+

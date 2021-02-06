@@ -1,5 +1,6 @@
 # INSEL MODEL PARSER
-A parser based on the insel model textfile provided by Pila.
+A parser based on the insel model textfile provided by Pila
+derives a undirected graph.
 
 # Dependency
 * A modern C++ compiler on your OS
